@@ -1,0 +1,10 @@
+A->NXT B->NXT C->NXT D->NXT (Current Linked list)
+AddLast
+	1.TRaverse through the list until u see pointer is null
+	2.Then assign D->NXT=E's reference and E->nxt=null
+Add First
+	1.Assign head value to the E->nxt i.e E->nxt=head
+	2.Then head=E'S Reference
+Add E after B Node
+	1.E->nxt=B->nxt,first copy C's reference from B to the E node
+	2.B->nxt=E's  reference then cofy reference of E to B->nxt
