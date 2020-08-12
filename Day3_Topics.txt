@@ -1,0 +1,11 @@
+DAY3
+
+*Implement Data structures(DS)
+
+	*Linked list- Linear DS with a node and pointer.Memory allocation is not conatgious
+  
+	*Stacks -Linear DS implemented using Array with Last in first out principle(LIFO)
+	
+	*Queue  -Linear DS implemented using Array with First In First Out principle (FIFO)
+	
+	*Binary Tree - Non linear DS with a node and 2 pointers following hierarchial format

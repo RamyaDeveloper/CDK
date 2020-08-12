@@ -1,0 +1,26 @@
+DAY2
+
+*Pointer   - Variable to store address of another variable
+*Declare   - * is placed infront of name associated with its datatype
+*Intialize - Assigning address of variable of same datatype
+
+*Function definitions - Body of it along with method signature(declaration)
+*Invocation -Call 
+
+*Pass by value     - A copy of variable is created i.e two independent variables with same values
+*Pass by reference - Orginal address of variable in memory is passed
+
+*Dynamic memory allocation(DMA) - Managing system memory at runtime
+*Deallocation - To free RAM when process is finished
+
+*Memory leakage - When not needed also still if memory is released
+
+*User Defined Structures(UDS) - Structure with set of fields defined by User
+
+*Access data member - Depends on access modifiers like public,private,default and protected
+
+*DMA for UDS - Based upon sizeof UDS ,DMA allocates memory at run time
+
+*Array of pointers - array of variables pointing to the other variables
+
+*Iterate on array of Pointers -Based on datatype, iterator element  is incremented by that no. of bytes

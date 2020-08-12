@@ -1,0 +1,22 @@
+DAY 1
+*Source code - General Understandable code by human
+*Object code - Machine understandable code(0s and 1s)
+
+*Using compilers with flags-Some falgs help in fast execution,optimization of code
+
+*Keywords-  Pre-defined words for performing specific function
+*Variables- Storage place to store different types of data
+
+*Variable scope - Until which part variables can be accessed
+*Lifetime    -    Time until it stays in memory location
+*Intial_Value -   Which is made at once in compile time
+*Modifiers-		  Prefixed with datatypes which helps in reducing storage place and type of integers
+
+*Selection Programming Constructs - To choose based on condition like if else
+*Loop construts  -To execute section of code multiple times 
+					*Definite  -count controlled
+					*Indefinite-condition controlled
+					
+*Declare Array    -Giving the datatype to array
+*Store data       -Assigning values to array
+*Process elements -Indexing the elements will do
