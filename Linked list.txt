@@ -8,3 +8,6 @@ Add First
 Add E after B Node
 	1.E->nxt=B->nxt,first copy C's reference from B to the E node
 	2.B->nxt=E's  reference then cofy reference of E to B->nxt
+Remove
+	1.Find previous node
+	
