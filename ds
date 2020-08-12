@@ -1,0 +1,8 @@
+Ds	        Sequential    	Random		Static		Dynamic		          Policy						        Usecases
+Arrays			                   Y		   Y				                     Contiguous MEMORY				To store rollnum of students
+	  			  								
+Linkedlist			Y				                           Y		            Linked through nodes		   polynomials
+
+Stack					                  Y    		  Y				                   last in first out			   Reverse order 
+						   		                      
+Queue			      	y					                         y		           first in first out			        proper order
