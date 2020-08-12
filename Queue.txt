@@ -1,0 +1,6 @@
+QUEUE
+Data members 
+rear,front
+Methods
+enqueue()
+dequeue()
