@@ -1,0 +1,148 @@
+Book.java
+
+
+public class Book {
+	private long isbn;
+	private String name ;
+	private double  price ;
+	private String publication ;
+	private String author;
+	public Book(long isbn, String name, String publication, String author) {
+		this.isbn = isbn;
+		this.name = name;
+		this.publication = publication;
+		this.author = author;
+	}
+	
+	 public Book() {
+		
+	}
+	  public Book(long isbn, String name, double price, String publication, String author) {
+		super();
+		this.isbn = isbn;
+		this.name = name;
+		this.price = price;
+		this.publication = publication;
+		this.author = author;
+	}
+
+	public Book(long isbn, String name, double price) {
+		//super();
+		this.isbn = isbn;
+		this.name = name;
+		this.price = price;
+	}
+
+	public long getIsbn() {
+		return isbn;
+	}
+	public void setIsbn(long isbn) {
+		this.isbn = isbn;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public double getPrice() {
+		return price;
+	}
+	public void setPrice(double price) {
+		this.price = price;
+	}
+	public String getPublication() {
+		return publication;
+	}
+	public void setPublication(String publication) {
+		this.publication = publication;
+	}
+	public String getAuthor() {
+		return author;
+	}
+	public void setAuthor(String author) {
+		this.author = author;
+	}
+	
+	public  void display()
+	{
+
+		System.out.println("Book [iSBN=" + isbn + ", name=" + name + ", price=" + price + ", publication=" + publication
+				+ ", author=" + author + "]");
+	}
+
+}
+
+------------------------------------------------------------------
+BookStore.java
+
+
+public class BookStore {
+	Book[] b=new Book[2];
+	public Book[] create()
+	{
+		Book[] books=new Book[5];
+		books[0]=new Book(11111,"Java",500,"SRS","RAVISHSTRI");
+		books[1]=new Book(22222,"Python",600,"MRM","MATHEW");
+		books[2]=new Book(33333,"Swing",800,"VRS","SANJAY");
+		books[3]=new Book(44444,"Spring",900,"CPB","TEJASWINI");
+		books[4]=new Book(55555,"CN",1100,"MSRM","MATHEWSSSW");
+		return books;
+	}
+
+	Book find(long isbn)
+	{
+		Book book=null;
+		for (Book obj : create()) {
+			if (obj.getIsbn() == isbn) {
+				book = obj;
+				break;
+			}
+		}
+		return book;
+	}			
+	Book update(long id,double price)
+	{
+		Book book=find(id);
+		if(book!=null)
+			book.setPrice(price);	
+		
+	return book;}
+}
+
+----------------------------------------------------------------
+MainBook.java
+
+
+public class MainBook {
+
+	public static void main(String[] args) {
+		BookStore store=new BookStore();
+		Book[] books=store.create();
+		for(Book var:books)
+		{
+			var.display();
+		}
+		
+		Book book=store.find(11111);
+		 if(book!=null)
+		 {
+			 System.out.println("Book found");
+			 book.display();
+			 
+		 }
+		 else
+		 System.out.println("Book not found");
+       book =store.update(44444, 3566);
+       if(book!=null)
+       {
+    	   System.out.println("price updated");
+    	   book.display();
+       }
+       else
+    	   System.out.println("book not found");
+       
+
+	}
+
+}
